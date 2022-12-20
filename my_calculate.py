@@ -29,6 +29,8 @@ while True:
         else:
             print(x // y)
 
+    # Целочисленное деление
+
     elif oper == '**':
         print(x**y)
 
