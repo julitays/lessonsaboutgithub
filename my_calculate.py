@@ -1,5 +1,7 @@
 # This is my first project for GitHub, I'm going to do my calculator!
 
+print('Hello, how are you? I want to show you my new calculator. Are you going to try it?')
+
 x, y = int(input('Введите число 1: ')), int(input('Введите число 2: '))
 
 
