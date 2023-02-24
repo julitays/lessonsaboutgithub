@@ -2,37 +2,36 @@
 
 print('Hello, how are you? I want to show you my new calculator. Are you going to try it?')
 
-x, y = map(int, input('Введите два числа: ').split())
-
+digit_1, digit_2 = map(int, input('Введите два числа: ').split())
 
 while True:
-    oper = input('Введите операцию, 'stop' или 'x' для выхода: ')
-    if oper == '+':
-        print(x + y)
+    operation = input('Введите операцию, "stop" или "x" для выхода: ')
+    if operation == '+':
+        print(digit_1 + digit_2)
 
-    elif oper == '-':
-        print(x - y)
+    elif operation == '-':
+        print(digit_1 - digit_2)
 
-    elif oper == '*':
-        print(x * y)
+    elif operation == '*':
+        print(digit_1 * digit_2)
 
-    elif oper == '/':
-        if x == 0 or y == 0:
+    elif operation == '/':
+        if digit_1 == 0 or digit_2 == 0:
             print('На ноль делить нельзя, как и ноль, собственно, на что-то тоже!')
         else:
-            print(x / y)
-    elif oper == '%':
-        print(x % y)
+            print(digit_1 / digit_2)
+    elif operation == '%':
+        print(digit_1 % digit_2)
     # Остаток от деления
-    elif oper == '//'':
-        if x == 0 or y == 0:
+    elif operation == '//':
+        if digit_1 == 0 or digit_2 == 0:
             print('На ноль делить нельзя, как и ноль, собственно, на что-то тоже!')
         else:
-            print(x // y)
+            print(digit_1 // digit_2)
     # Целочисленное деление
-    elif oper == '**':
-        print(x ** y)
-    elif oper == 'stop' or 'x':
+    elif operation == '**':
+        print(digit_1 ** digit_2)
+    elif operation == 'stop' or operation == 'x' or operation == 'X':
         break
     else:
         print('Введите операцию!')
